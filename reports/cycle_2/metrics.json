@@ -1,0 +1,34 @@
+{
+  "sharpeRatio": 0.0,
+  "annualReturn": 0.0,
+  "maxDrawdown": 0.0,
+  "hitRate": 0.0,
+  "totalTrades": 0,
+  "transactionCosts": {
+    "feeBps": 10,
+    "slippageBps": 5,
+    "netSharpe": 0.0
+  },
+  "walkForward": {
+    "windows": 0,
+    "positiveWindows": 0,
+    "avgOosSharpe": 0.0
+  },
+  "customMetrics": {
+    "phase": "2-data-pipeline",
+    "raw_data_rows": 2556,
+    "raw_data_start": "2017-01-01",
+    "raw_data_end": "2023-12-31",
+    "feature_rows": 2543,
+    "feature_columns": 6,
+    "feature_start": "2017-01-14",
+    "feature_end": "2023-12-31",
+    "target_positive_count": 1341,
+    "target_negative_count": 1202,
+    "target_positive_ratio": 0.527,
+    "nan_count": 0,
+    "warmup_rows_dropped": 13,
+    "tests_passed": 20,
+    "tests_failed": 0
+  }
+}

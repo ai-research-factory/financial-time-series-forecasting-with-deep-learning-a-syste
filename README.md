@@ -18,6 +18,23 @@ pytest tests/
 
 Data is fetched from the ARF Data API at runtime. Do not commit data files.
 
+```bash
+python3 main.py process-data
+```
+
+This fetches BTC-USD daily OHLCV data (2017-01-01 to 2023-12-31) and generates features:
+- Close-to-close returns
+- RSI(14)
+- MACD(12, 26, 9)
+- Target: next-day price direction (close > open)
+
+Output: `data/processed/features.pkl` (2543 rows, 6 columns)
+
+## Current Status
+
+- **Cycle 1**: Core LSTM model implemented on synthetic data
+- **Cycle 2**: Real data pipeline — BTC-USD data loading and feature engineering
+
 ## Reports
 
 Each cycle produces:
